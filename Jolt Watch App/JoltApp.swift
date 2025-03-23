@@ -8,7 +8,13 @@
 import SwiftUI
 
 @main
-struct Jolt_Watch_AppApp: App {
+struct Jolt: App {
+    let notificationManager = NotificationManager()
+
+    init() {
+        notificationManager.requestPermission()
+    }
+
     var body: some Scene {
         WindowGroup {
             ContentView()
