@@ -18,7 +18,7 @@ class NotificationManager {
 
     func scheduleNotification(at time: Date) {
         let content = UNMutableNotificationContent()
-        content.title = "Jolt"
+        content.title = "This is your jolt!!!"
         content.sound = UNNotificationSound.default
 
         let components = Calendar.current.dateComponents([.hour, .minute], from: time)
