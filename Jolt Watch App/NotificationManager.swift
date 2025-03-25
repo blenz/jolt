@@ -18,8 +18,8 @@ class NotificationManager {
 
     func scheduleNotification(at time: Date) {
         let content = UNMutableNotificationContent()
-        content.title = "This is your jolt!!!"
-        content.sound = UNNotificationSound.default
+        content.title = "Jolt"
+        content.sound = .default
 
         let components = Calendar.current.dateComponents([.hour, .minute], from: time)
         let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: false)
